@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+    //   // Le storage :
+    //   // - local : persistant
+    //   // - ou session (jusqu'à ce que le navigateur soit fermé)
+    //   // Pour stocker une valeur dans le local :
+    //   localStorage.setItem("cle", "valeur");
+    //   //pour recupérer la valeur dans le local:
+    //   console.log(localStorage.getItem("cle"));
+    //   // Pour stocker une valeur dans le local :
+    //   sessionStorage.setItem("cle", "valeur");
+    //   //pour recupérer la valeur dans le local:
+    //   console.log(sessionStorage.getItem("cle"));
+
+    //   for (let i = 0; i < 5; i++) {
+    //     sessionStorage.setItem("cle" + i, "valeur" + i);
+    //   }
+
+    //   // key(n) retourne le nom de la énième clé
+    //   // length retourne le nombre de data dans l'objet Storage
+    //   // getItems(keyname)
+    //   //setItem(keyname,value)
+    //   //removeItem(keyname) supprimer une clé
+    //   //clear() dégage toutes les clés
+    //   //localstorage.cle (pour avoir la valeur d'une clé)*
+    //   localStorage["la_cle3"] = "tututoto"; //set une clé/valeur
+    //   console.log(localStorage.cle); //get une valeur via une clé
+    //   let myJson = JSON.parse(localStorage);
+      
+    let a = [
+        {
+          "nom": "brett",
+          "prénom": "toto",
+        },
+        {
+          "nom": "lolie",
+          "prénom": "lolo",
+        },
+        {
+          "nom": "kirikou",
+          "prénom": "tagawa",
+        },
+        {
+          "nom": "caroline",
+          "prénom": "momo",
+        },
+      ];
+
+      //localStorage.setItem("a", JSON.stringify(a));
+       let b =  JSON.parse (localStorage.getItem("a"));
+       
+      //JSON {"clé":"valeur"}
+      //JS object {clé:"valeur" ou fonction} obj.prop comme localStorage.cle1
+
+    </script>
+  </body>
+</html>

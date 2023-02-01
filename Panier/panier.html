@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon petit panier</title>
+</head>
+<body>
+   <style>
+    input
+    {
+        display:block; 
+        margin:5px; 
+        background:rgb(246, 246, 163);      
+    }
+    label
+    {
+        margin:5px;
+    }
+   </style>
+    <h2>Ajout de produits</h2>
+
+    <label for="name">Nom du produit</label>
+    <input type="text" name="nom" id="nom" value="a">
+    <label for="ref">Réference</label>
+    <input type="text" name="ref" id="ref" value="rn">
+    <label for="prix">Prix</label>
+    <input type="number" name="prix" id="prix" value="12">
+    <label for="quantity">Quantité</label>
+    <input type="number" name="quantity" id="quantity" value="2">
+    <input type="button" id="btn" value="Ajouter le produit">
+
+    <h2>Liste des produits dispos</h2>
+    <div id="tableContainer">
+
+    </div>
+
+    <h2>Affichage du panier</h2>
+    <div id="affiche">
+
+    </div>
+    <script src="panier.js"></script>
+
+   
+</body>
+</html>
